@@ -1,0 +1,24 @@
+<view class="about-box">
+  <view class='headers'>
+  </view>
+  <view class='h1'>
+    <text>品牌介绍</text>
+    <image src='../images/right.svg'></image>
+  </view>
+  <view class='article'>
+    <text>LINK+创意工作室创建于2016年12月16日，致力于帮助每个企业实现数字化智能经营。截止目前，已服务了包括制造、服务、IT互联网、建筑与房地产、外贸、物流、零售等14个主流行业近百个细分行业10万+企业客户。</text>
+  </view>
+  <view class='lines'></view>
+  <view class='h1'>
+    <text>联系方式</text>
+    <image src='../images/right.svg'></image>
+  </view>
+  <view class='article'>
+  <text>地点：北京市朝阳区广百5A写字楼8层-808室
+    邮编：100000
+    手机：133-7013-0745
+    传真：010-66668888
+    邮箱：463961434@qq.com
+  </text>
+  </view>
+</view>

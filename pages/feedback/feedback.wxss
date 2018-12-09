@@ -1,0 +1,31 @@
+.feedback{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #222;
+  box-sizing: border-box;
+  padding: 0 60rpx;
+  font-size:28rpx;
+  color: white;
+}
+.feedback form {
+  display: block;
+  padding-top: 80rpx;
+}
+.feedback input,textarea {
+  margin: 20rpx 0;
+  padding: 5rpx 20rpx;
+  border: 1px solid #333;
+  border-radius: 10rpx;
+}
+textarea {
+  padding-top: 10rpx;
+}
+.feedback input:focus,.feedback textarea:focus {
+  border: 1px solid #ffcd32;
+}
+.feedback button{
+  background:#ffcd32;
+}

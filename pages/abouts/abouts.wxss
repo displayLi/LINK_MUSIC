@@ -1,0 +1,77 @@
+@import "../play/fonts/fonts.wxss";
+.about-page {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #222;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+.about-header {
+  display: flex;
+  margin: 40rpx 0;
+  position: relative;
+}
+.about-header .about-userName {
+  font-size: 48rpx;
+  color: white;
+  flex: 1;
+  margin-top:40rpx; 
+}
+.about-header .about-userImg {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #333;
+}
+.userbtn {
+  position: absolute;
+  top: 20rpx;
+  left: 310rpx;  
+  font-size: 20rpx;
+  color: #ccc;
+  background-color: transparent;
+  line-height: 40rpx;
+  padding: 0 6rpx;
+  border: 1px solid #ccc;
+  border-radius: 14rpx;
+}
+.aboutMe {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  padding: 40rpx;
+  border-radius: 10rpx; 
+}
+.aboutMe .aboutMe-title {
+  font-size: 42rpx;
+  display:block;
+  padding: 20rpx 0;
+}
+.like-box {
+  line-height: 90rpx;
+  display: flex;
+}
+.like .icon-heart,.icon-star-like,.icon-edit,.icon-info-circle{
+  margin-right:30rpx; 
+  font-size: 34rpx;
+}
+.like .like-line {
+  flex: 2;
+}
+.right {
+  float: right;
+  font-size: 68rpx;
+  color: #888;
+}
+.bottom-line,.right-line{
+  border-bottom: 1px solid #444;
+}
+.dir {
+  margin-top:80rpx; 
+}

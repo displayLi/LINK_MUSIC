@@ -1,0 +1,48 @@
+<view class='about-page'>
+  <view class='about-header'>
+    <open-data class='about-userName' type="userNickName"></open-data>
+    <open-data type="userAvatarUrl" class="about-userImg"></open-data>
+  </view>
+  
+  <view class='aboutMe'>
+    <text class='aboutMe-title'>About US</text>
+    <!-- about Me -->
+    <view class='like'>
+      <view bindtap='myLike' class='like-box'>
+        <i class="icon-heart"></i>
+        <view class='like-line bottom-line'>
+          <text>我喜欢的</text>
+        </view>
+        <i class="right icon-right right-line"></i>
+      </view>
+      <!-- 我收藏的 -->
+      <view bindtap='mySc' class='like-box'>
+        <i class="icon-star-like"></i>
+        <view class='like-line'>
+          <text>我收藏的</text>
+        </view>
+        <i class="right icon-right"></i>
+      </view>
+    </view>
+  </view>
+  <view class='aboutMe dir'>
+    <!-- 用户反馈 -->
+    <view class='like'>
+      <view bindtap='feedback' class='like-box'>
+        <i class="icon-edit"></i>
+        <view class='like-line bottom-line'>
+          <text>用户反馈</text>
+        </view>
+        <i class="right icon-right right-line"></i>
+      </view>
+      <!-- 关于我们 -->
+      <view bindtap='about' class='like-box'>
+        <i class="icon-info-circle"></i>
+        <view class='like-line'>
+          <text>关于我们</text>
+        </view>
+        <i class="right icon-right"></i>
+      </view>
+    </view>
+  </view>
+</view>

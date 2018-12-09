@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/play/play",
+    "pages/abouts/abouts",
+    "pages/details/details",
+    "pages/feedback/feedback",
+    "pages/mylike/mylike",
+    "pages/about/about",
+    "pages/mysc/mysc"
+    
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#222",
+    "navigationBarTitleText": "LINK MUSIC",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "backgroundColor": "#222",
+    "color": "#ccc",
+    "selectedColor":"#ffcd32",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "navBarImages/index.png",
+        "selectedIconPath": "navBarImages/index-active.png"
+      },
+      {
+        "pagePath": "pages/play/play",
+        "text": "播放",
+        "iconPath": "navBarImages/music.png",
+        "selectedIconPath": "navBarImages/music-active.png"
+      },
+      {
+        "pagePath": "pages/abouts/abouts",
+        "text": "关于我们",
+        "iconPath": "navBarImages/about.png",
+        "selectedIconPath": "navBarImages/about-active.png"
+      }
+    ]
+  }
+}

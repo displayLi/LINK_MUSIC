@@ -1,0 +1,11 @@
+<view class='feedback'>
+  <form bindsubmit="formSubmit">
+    <text>您的称呼：</text>
+    <input placeholder='请输入你的名字' name="users"></input>
+    <text>QQ或微信号：</text>
+    <input placeholder='请输入你的QQ或微信号码' name="numbers"></input>
+    <text>意见：</text>
+    <textarea placeholder="请给我们的服务提出宝贵的意见" name="textarea"/>
+    <button form-type="submit" > 提交 </button>
+  </form>
+</view>
