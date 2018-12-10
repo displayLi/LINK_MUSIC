@@ -40,7 +40,8 @@ Page({
   // 播放器函数
   MusicDatas(name,imgUrl,epname,src){
     this.setData({
-      musicSrc: 'http://ws.stream.qqmusic.qq.com/C100' + src + '.m4a?fromtag=0&guid=126548448',
+      musicSrc: `https://api.bzqll.com/music/tencent/url?key=579621905&id=${src}&br=320`,
+      
       musicTitle: name,
       author: epname,
       musicImg: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000' + imgUrl + '.jpg'
@@ -50,7 +51,7 @@ Page({
     music.title = name //name
     music.coverImgUrl = 'https://y.gtimg.cn/music/photo_new/T002R300x300M000' + imgUrl + '.jpg',  //imgUrl
     music.epname = epname, // epname
-    music.src = 'http://ws.stream.qqmusic.qq.com/C100' + src + '.m4a?fromtag=0&guid=126548448' //src
+      music.src = `https://api.bzqll.com/music/tencent/url?key=579621905&id=${src}&br=320`, //src
     music.play()
     this.setData({ playLists: false })
 
@@ -105,7 +106,7 @@ Page({
       let minute = "" + parseInt(music.duration / 60) < 10 ? "0" + parseInt(music.duration / 60) : '' + parseInt(music.duration / 60);
       let second = "" + parseInt(music.duration % 60) < 10 ? "0" + parseInt(music.duration % 60) : "" + parseInt(music.duration % 60);
       this.setData({ durations: minute + ':' + second })
-    }, 500)
+    }, 1000)
 
     // 获取当前时间
     clearInterval(timer);
