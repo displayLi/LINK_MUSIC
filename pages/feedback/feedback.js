@@ -17,7 +17,7 @@ Page({
     if (val.users !== '' && val.numbers !== '' && val.textarea !== ''){
       console.log(val);
       wx.request({
-        url: 'http://api.link97.com:5000/linkMusic',
+        url: 'http://api.link97.com:8087/linkMusic',
         data: val,
         header: {"Content-Typt":"application/json"},
         method: 'POST',
