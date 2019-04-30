@@ -7,7 +7,7 @@ Page({
     starLists: true,
     musicTitle: "LINK MUSIC",
     author: "还没有播放的音乐哦~",
-    musicImg: "http://www.link97.com/link/link/images/left.png",
+    musicImg: "http://www.link97.com/link/link/templates/ue_content/templates/images/logo.jpeg",
     musicSrc: '',
     alertTitle: "喜欢成功",
     durations: "00:00",
@@ -40,7 +40,7 @@ Page({
   // 播放器函数
   MusicDatas(name,imgUrl,epname,src){
     this.setData({
-      musicSrc: `https://api.bzqll.com/music/tencent/url?key=579621905&id=${src}&br=320`,
+      musicSrc: `http://dl.stream.qqmusic.qq.com/C400${src}.m4a?guid=7099469992&vkey=2DFD0ACF38F36ADB35308F30274E65A1E12CEA39C336005BF49315040BF698721C544A5A819A576AB49766E8BEDC86C1C892A0E37ECE47C3&uin=0&fromtag=38`,
       
       musicTitle: name,
       author: epname,
@@ -48,10 +48,11 @@ Page({
     })
 
     let music = wx.getBackgroundAudioManager()
+    console.log(src);
     music.title = name //name
     music.coverImgUrl = 'https://y.gtimg.cn/music/photo_new/T002R300x300M000' + imgUrl + '.jpg',  //imgUrl
     music.epname = epname, // epname
-      music.src = `https://api.bzqll.com/music/tencent/url?key=579621905&id=${src}&br=320`, //src
+      music.src = `http://dl.stream.qqmusic.qq.com/C400${src}.m4a?guid=7099469992&vkey=2DFD0ACF38F36ADB35308F30274E65A1E12CEA39C336005BF49315040BF698721C544A5A819A576AB49766E8BEDC86C1C892A0E37ECE47C3&uin=0&fromtag=38`, //src
     music.play()
     this.setData({ playLists: false })
 
@@ -106,7 +107,7 @@ Page({
       let minute = "" + parseInt(music.duration / 60) < 10 ? "0" + parseInt(music.duration / 60) : '' + parseInt(music.duration / 60);
       let second = "" + parseInt(music.duration % 60) < 10 ? "0" + parseInt(music.duration % 60) : "" + parseInt(music.duration % 60);
       this.setData({ durations: minute + ':' + second })
-    }, 1000)
+    }, 1500)
 
     // 获取当前时间
     clearInterval(timer);

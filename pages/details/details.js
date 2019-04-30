@@ -54,6 +54,7 @@ Page({
   },
   // 路由传参到某个界面
   playList({currentTarget:{dataset:val}}){
+    console.log(dataset)
     // 传值
     app.globalData.musicLink = val.musicsrc;
     app.globalData.musicImg = val.imgsrc;
